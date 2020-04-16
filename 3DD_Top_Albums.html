@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #123456;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1250px;
+  background: #110319;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: impact;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1250px;
+  background-color: #132313;
+  text-align:center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #611212;
+  padding: 10px;
+  text-align: center;
+  color: #ffff00;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+	color: teal;
+}
+
+a:hover {
+	color: aquamarine;
+}
+
+a:visited {
+	color: teal;
+}
+
+img {
+	max-height: 100%;
+    max-width: 100%;
+}
+
+p {
+	color:cornsilk;
+}
+
+ol {
+	color:cornsilk;
+    text-align:left;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2> <img src="https://images.cooltext.com/5403910.png"/> </h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About the Band</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+      
+    </ul>
+    <img src="https://images.squarespace-cdn.com/content/v1/535eb4d7e4b08c41d0c4ae5c/1443191661151-YW7AV48MSKMG2WHMF6CM/ke17ZwdGBToddI8pDm48kIR0P6XGKfSaKNYbXEKXry5Zw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7Xj1nVWs2aaTtWBneO2WM-sSVRtGtuR8nvcvp382nCtlxOKWs-c4Zhuho0gKUdMNKg/image-asset.jpeg?format=300w"/>
+  </nav>
+  
+  <article>
+ 	<h1 style="font-size:70px;color:cyan;border:5px dashed red;">Top Albums</h1>
+    
+    <table align="center">
+    
+    <tr>
+    <td><th style="color:cornsilk;">3 Doors Down</th></td>
+    <td><img src="https://upload.wikimedia.org/wikipedia/en/6/65/3_doors_down.jpg"/></td>
+    <td>
+        <ol>
+        <li>Train</li>
+        <li>Citizen/Soldier</li>
+        <li>It's Not My Time</li>
+        <li>Let Me Be Myself</li>
+        <li>Pages</li>
+        <li>It's the Only One You've Got</li>
+        <li>Give It to Me</li>
+        <li>These Days</li>
+        <li>Your Arms Feel Like Home</li>
+        <li>Runaway</li>
+        <li>When It's Over</li>
+        <li>She Dont Want the World</li>
+        </ol>
+    </td>
+    </tr>
+    
+     <tr>
+     <td><th style="color:cornsilk;">The Better Life</th></td>
+    <td><img src="https://upload.wikimedia.org/wikipedia/en/6/66/The_Better_Life_3DD.JPG"/></td>
+    <td>
+    	<ol>
+        <li>Kryptonite</li>
+        <li>Loser</li>
+        <li>Duck and Run</li>
+        <li>Not Enough</li>
+        <li>Be Like That</li>
+        <li>Life Of My Own</li>
+        <li>Better Life</li>
+        <li>Down Poison</li>
+        <li>Be My Side</li>
+        <li>Smack</li>
+        <li>So I Need You</li>
+        </ol>
+    </td>
+    </tr>
+    
+     <tr>
+     <td><th style="color:cornsilk;">Time of My Life</th></td>
+    <td><img src="https://upload.wikimedia.org/wikipedia/en/2/2e/3_doors_down_time_of_my_life.png"/></td>
+    <td>
+    	<ol>
+        <li>Time of My Life</li>
+        <li>When You're Young</li>
+        <li>Round and Round</li>
+        <li>Heaven</li>
+        <li>Race for the Sun</li>
+        <li>Back to Me</li>
+        <li>Every Time You Go</li>
+        <li>What's Left</li>
+        <li>On the Run</li>
+        <li>She Is Love</li>
+        <li>My Way</li>
+        <li>Believer</li>
+        </ol>
+    </td>
+    </tr>
+    </table>
+  </article>
+  
+</section>
+
+<footer>
+  	<i>Copyright &copy; 2020 Samuel Knudson. All Rights Reserved.
+</footer>
+
+</body>
+</html>
